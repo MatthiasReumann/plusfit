@@ -1,0 +1,116 @@
+.info{
+    position: relative;
+}
+
+.info .top{
+    margin: 0 0 64px 0;
+}
+
+.info .top .name-wrapper h1{
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+}
+
+.info .top .adress-wrapper p{
+    margin: 0 0 2px 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.info .top .contact{
+    margin: auto 0;
+}
+
+.info .top .contact .contact-element-wrapper{
+    display: flex;
+}
+
+.info .top .contact .google-review{
+    margin: 0 0 16px 0;
+}
+
+.info .top .contact .google-review i{
+    color: #f1c40f;
+    font-size: 1.2rem;
+    margin: 0 4px 0 0;
+}
+
+.info .top .contact .google-review p{
+    color: #bdbdbd;
+    font-size: 1.2rem;
+    margin: 8px 0 0 0;
+}
+
+.info .top .contact .contact-element-wrapper a, .info .top .contact .contact-element-wrapper i {
+    color: #ed6f21;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+
+.info .top .contact .contact-element-wrapper i {
+    margin: auto 0;
+}
+
+.info .openinghours-wrapper{
+    padding: 32px 0 0 0;
+}
+
+.info .openinghours-wrapper h2{
+    margin: 0 0 8px 0;
+}
+.info .openinghours-wrapper .openinghours .openinghours-element p, .info .openinghours-wrapper .openinghours .openinghours-element h4{
+    margin: 0;
+    font-size: 22px;
+}
+
+.info .openinghours-wrapper .openinghours .openinghours-element p{
+    margin: 0;
+}
+
+.info .openinghours-wrapper .openinghours .openinghours-element h4{
+    color: #bdbdbd;
+    font-style: italic;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px){
+    .info{
+        padding: 64px 32px;
+    }
+
+    .info .top .contact .contact-element-wrapper a{
+        margin: 0 0 2px 16px;
+    }
+
+    .info .openinghours-wrapper .openinghours .openinghours-element h4{
+        font-size: 1rem;
+    }
+
+    .info .openinghours-wrapper .openinghours{
+        display: grid;
+    }
+
+    .info .openinghours-wrapper .openinghours .openinghours-element{
+        margin: 16px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .info{
+        padding: 64px 20%;
+    }
+
+    .info .top .contact .contact-element-wrapper a{
+        margin: 0 0 2px 32px;
+    }
+
+    .info .openinghours-wrapper .openinghours{
+        display: flex;
+    }
+    
+    .info .openinghours-wrapper .openinghours .openinghours-element:not(:first-child){
+        margin: 0 32px;
+    }
+}

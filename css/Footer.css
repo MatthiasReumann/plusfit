@@ -1,0 +1,83 @@
+footer .line{
+    color: white;
+    width: 100%;
+    height: 64px;
+    position: relative;
+    bottom: 0;
+    font-size: 0.9rem;
+}
+
+footer .right{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+
+footer .left{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+
+footer .bottom-line{
+    background: #272727;
+}
+
+footer .socials{
+    background: #757575;
+}
+
+footer .socials a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .socials a:not(:last-child){
+    margin: 0 16px;
+}
+
+footer .socials a:hover{
+    color: #ed6f21;
+    text-decoration: underline;
+}
+
+footer .socials i{
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1024px){
+    footer .bottom-line .right{
+        right: 16px;
+    }
+    
+    footer .bottom-line .left{
+        left: 16px;
+    }
+
+    footer .socials .left{
+        position: relative;
+        margin: auto;
+    }
+
+    footer .socials .right{
+        display: none;
+    }
+
+    footer .line{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer .bottom-line .right, footer .socials .right{
+        right: 32px;
+    }
+    
+    footer .socials .left, footer .bottom-line .left{
+        left: 32px;
+    }
+
+    footer .line{
+        font-size: 0.9rem;
+    }
+}

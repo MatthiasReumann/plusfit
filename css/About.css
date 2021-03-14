@@ -1,0 +1,41 @@
+.about .element{
+    padding: 32px;
+}
+
+.about .element i, .about .element h2, .about .element p, .about .element a{
+    text-align: center;
+}
+
+.about .element i{
+    width: 100%;
+    color: #ed6f21;
+}
+
+.about .element h2{
+    margin: 16px 0;
+}
+
+.about .element p:first-child{
+    margin: 32px 0 0 0;
+}
+
+.about .element > p{
+    margin: 8px 0 0 0;
+    color: black;
+}
+
+.about .element a{
+    margin: 0 0 8px 0;
+    text-decoration: none;
+    color: rgb(237,111,33);
+}
+
+@media screen and (max-width: 1024px){
+      
+}
+
+@media screen and (min-width: 1024px) {
+    .about{
+        padding: 64px;
+    }
+}

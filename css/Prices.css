@@ -1,0 +1,113 @@
+.prices{
+    background: #272727;
+}
+
+.prices #price-headline{
+    text-transform: uppercase;
+    margin: 0 0 64px 0;
+    color: white;
+    font-weight: bold;
+}
+
+.prices .card{
+    background: white;
+    color: black;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.3);
+    padding: 42px 64px;
+}
+
+.prices .card h3, .prices .card h2, .prices .card i{
+    text-align: center;
+}
+
+.prices .card h3{
+    margin: 32px 0 0 0;
+    font-size: 0.8rem;
+}
+
+.prices .card i{
+    color: black;
+    width: 100%;
+}
+
+.prices .card h2{
+    margin: 0;
+}
+
+.prices .card .subline{
+    text-align: center;
+    color: #8d8d8d;
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin: 0 0 8px 0;
+}
+
+.prices .card .price-info{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin: 0 0 16px 0;
+    color: #bdbdbd;
+}
+
+#short-message{
+    margin: 64px 32px 16px 32px;
+    color: white;
+    text-align: center;
+}
+
+#trial{
+    margin: 16px 32px;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+}
+
+#wellness{
+    color: #badc58;
+}
+
+#solar{
+    color: #f9ca24;
+}
+
+#ticket{
+    color: #bea493;
+}
+
+#drink{
+    color: #82ccdd;
+}
+
+#bestbuy{
+    color: #8c7ae6;
+}
+
+#crown{
+    color: #D4AF37;
+}
+
+@media screen and (max-width: 1024px){
+    .prices{
+        padding: 64px 16px;
+    }
+
+    .prices .card{
+        padding: 16px 32px;
+    }
+      
+}
+
+@media screen and (min-width: 1024px) {
+    .prices{
+        padding: 64px;
+    }
+
+    .prices .card{
+        background: white;
+        color: black;
+        box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 42px 64px;
+    }
+}

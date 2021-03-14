@@ -1,0 +1,25 @@
+.message{
+    background: #272727;
+    color: white;
+}
+
+.message h1{
+    color: white;
+}
+
+.message .message-content{
+    margin: 0 0 64px 0;
+}
+
+@media screen and (max-width: 1024px){
+    .message{
+        padding: 64px 32px;
+    }
+      
+}
+
+@media screen and (min-width: 1024px) {
+    .message{
+        padding: 64px 128px;
+    }
+}
