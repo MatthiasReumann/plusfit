@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack ./src/index.js --output-path ./bin/ --mode=development --watch"
+    "start": "webpack ./src/index.js --output-path ./bin/ --mode=development --watch",
+    "build": "webpack ./src/index.js --output-path ./bin --mode=production"
   },
   "keywords": [],
   "author": "",
