@@ -19,6 +19,11 @@ function scrollTo(id){
     UIkit.scroll(element).scrollTo(element);
 }
 
+function onNavClick(){
+    hideDropdown();
+    toggleIcon();
+}
+
 module.exports = {
     oncreate: function(vnode) {
         hideDropdown()
@@ -52,17 +57,17 @@ module.exports = {
                     m("i",{id:"tgl-button", class:"fas fa-bars uk-position-center-right uk-margin-right", "uk-toggle":"target:#mobile-nav; animation: uk-animation-slide-top-small", onclick:toggleIcon}),
                     m(".dropdown .uk-flex", {id:"mobile-nav"}, [
                         m(".uk-margin-auto-vertical .uk-width-1-1", [
-                            m(m.route.Link, {href:"/corona", onclick: hideDropdown}, [m(".nav-element", "corona"),]),
+                            m(m.route.Link, {href:"/corona", onclick: onNavClick}, [m(".nav-element", "corona"),]),
                             m("hr"),
                             /*m(m.route.Link, {href:"/home#prices", "uk-scroll":"", onclick: hideDropdown}, [m(".nav-element", "preise")]),
                             m("hr"),
                             m(m.route.Link, {href:"/home#about", "uk-scroll":"",onclick: hideDropdown}, [m(".nav-element", "über uns")]),
                             m("hr"),*/
-                            m("a", {href:"https://www.plus-fit.de/index.php/kurs-stundenplan/", target:"_blank", onclick: hideDropdown}, [m(".nav-element", "kurse")]),
+                            m("a", {href:"https://www.plus-fit.de/index.php/kurs-stundenplan/", target:"_blank", onclick: onNavClick}, [m(".nav-element", "kurse")]),
                             m("hr"),
-                            m(m.route.Link, {href:"/datenschutz", onclick: hideDropdown}, [m(".nav-element", "Datenschutz")]),
+                            m(m.route.Link, {href:"/datenschutz", onclick: onNavClick}, [m(".nav-element", "Datenschutz")]),
                             m("hr"),
-                            m(m.route.Link, {href:"/impressum", onclick: hideDropdown}, [m(".nav-element", "Impressum")])
+                            m(m.route.Link, {href:"/impressum", onclick: onNavClick}, [m(".nav-element", "Impressum")])
                         ])
                     ])
                 ])
